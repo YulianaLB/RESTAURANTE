@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Imagenes</title>
+    <style>
+        form{
+         background-color: rgb(181, 52, 52);   
+         width: 46%;
+         margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <Form action= "alta_imagen2.php" method="post" enctype="multipart/form-data">
+        <fieldset>
+            <legend>crear imagen</legend><br>
+            <input type= "file" name= "foto" value="cargar imagen" accept=".jpeg, .png, .svg">
+            <input type="text" name="nombre_foto"><br>
+            <select name="" id="">
+                <option value="0" selected>elegir</option>
+                <option value="1">--DEFECTO--</option>
+                <option value="2">--PRUEBA--</option>
+            </select>
+
+            <input type="submit" value="crear imagen">  
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
